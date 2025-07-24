@@ -1,0 +1,124 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+ body {
+    background-color: #FFC694;
+ }
+
+.my-container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    word-wrap:break-word;
+    border-radius: 10px;
+    width: 400px;
+    
+}
+.top-part {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0.05px;
+    padding-bottom: 0.05px;
+    border-radius: 10px;
+    width: 400px;
+    gap: 20px;
+}
+
+.top-part-front {
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0.05px;
+    padding-bottom: 0.05px;
+    border-radius: 10px;
+}
+
+.front-page {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    word-wrap:break-word;
+    border-radius: 10px;
+    gap: 20px;
+
+}   
+
+.button {
+    background-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+.comment-section {
+    background-color: white;
+    padding: 14px 25px;
+    margin:20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+a:link {
+    color: #A6C670;
+}
+
+a:visited {
+    color: #46660f;
+}
+
+
+.comment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.comment-table th {
+    text-align: left;
+}
+
+
+@media (max-width: 700px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 95%;
+    }
+}

@@ -1,0 +1,47 @@
+<!--<%= debug @wips %> -->
+
+
+<div class="top-part-front">
+    <div class="box">
+        <h1>WIPs!</h1>
+    </div>
+</div>
+
+<div class="my-container">
+    <div id="wips">
+        <% @wips.each do |wip| %>
+            <div>
+                <%= link_to wip.name, wip %>
+            </div>
+        <% end %>
+    </div>
+</div>
+
+
+
+<div class="box">
+    <h1>Comments :3</h1>
+</div>
+
+<div class="my-container">
+    <table class="comment-table">
+        <thead>
+        <tr>
+        <th>Message: </th>
+        <th>From: </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @comments.each do |comment| %>
+        <tr>
+            <td><%= comment.message %></td>
+            <td><%= comment.from %></td>
+        </tr>
+        <% end %>
+    </tbody>
+    </table>
+</div>
+
+<div class="comment-section"> 
+    <%= link_to "Write me a comment :D", new_comment_path%>     
+</div>

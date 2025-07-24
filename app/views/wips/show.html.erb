@@ -1,0 +1,10 @@
+<div class="top-part">
+    <h1><%= @wip.name %></h1>
+</div>
+
+<div class="front-page">
+    <p><%= @wip.description %></p>
+    <a href="<%= @wip.gitlink %>" target="_blank">Repo Link :3</a>
+    <br>
+    <%= link_to "Back", wips_path %>
+</div>

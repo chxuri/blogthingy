@@ -1,0 +1,17 @@
+<div class="top-part">
+    <h1>New Message (YAYAYYAY)</h1>
+</div>
+<div class="front-page">
+<%= form_with model: @comment do |form| %>
+    <div>
+        <%= form.label :message %>
+        <%= form.text_field :message %>
+        <%= form.label :from %>
+        <%= form.text_field :from %>
+    </div>
+
+    <div>
+        <%= form.submit %>
+    </div>
+<% end %>
+</div>
